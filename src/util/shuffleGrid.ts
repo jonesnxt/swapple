@@ -12,7 +12,6 @@ function predictableSort() {
 export function shuffleGrid(grid: string[]) {
   while(true) {
     const shuffle = grid.join('').split('').sort(predictableSort).join('').match(/.{1,5}/g);
-    console.log(shuffle);
     if(shuffle != null && !doesGridHaveWords(shuffle)) return shuffle;
   }
 }

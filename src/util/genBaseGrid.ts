@@ -12,7 +12,5 @@ export function genBaseGrid() {
     wordlist.push(WORDLES[(seed + (generator*i)) % NUM_WORDLES]);
   }
 
-  console.log(wordlist);
-
   return shuffleGrid(wordlist);
 }
